@@ -1,0 +1,117 @@
+:root {
+    /* Colors */
+    --clr-primary: hsl(212, 45%, 89%);
+    --clr-secondary: hsl(0, 0%, 100%);
+    --clr-gray-blue: hsl(220, 15%, 55%);
+
+    /* Fonts */
+    --fs-300: 0.875rem;
+    --fs-400: 0.9375rem;
+    --ff-primary: 'Outfit', sans-serif;
+
+    /* Font Weights */
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    /* Line Height */
+    --line-height: 1.25;
+}
+
+/* Reset Code */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility Classes */
+
+.bg-primary {
+    background: var(--clr-primary);
+}
+
+.bg-secondary {
+    background: var(--clr-secondary);
+}
+
+.clr-gray-blue {
+    color: var(--clr-gray-blue);
+}
+
+.fs-400 {
+    font-size: var(--fs-300);
+}
+
+.ff-primary {
+    font-family: var(--ff-primary);
+}
+
+.fw-normal {
+    font-weight: 400;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.br-rad {
+    border-radius: 1rem;
+}
+
+.lh-125 {
+    line-height: var(--line-height);
+}
+
+
+/* General Styling */
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-code {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-w {
+    width: 12ch;
+    padding: 0.5em 0 0.25em 0;
+}
+
+.para-w {
+    width: 20ch;
+    padding: 0.25em 0;
+}
+
+.img {
+    width: 12rem;
+}
+
+@media (min-width: 23em) {
+    .img {
+        width: 18.5rem;
+    }
+    .head-w {
+        width: 18ch;
+    }
+    .para-w {
+        width: 24ch;
+    }
+    .fs-400 {
+        font-size: var(--fs-400);
+    }
+}
